@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<xsd:schema xmlns='http://schemas.microsoft.com/intellisense/html-5' xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+  <xsd:group name="flowContent">
+    <xsd:all>
+      <xsd:element name="elem1"/>
+    </xsd:all>
+  </xsd:group>
+<xs:element name="html">
+    <xs:complexType>
+      <xsd:choice>
+        <xsd:group ref="flowContent"/>
+      </xsd:choice>
+      <xs:attribute name="manifest" type="xsd:anyURI" />
+    </xs:complexType>
+  </xs:element>
+</xsd:schema>
